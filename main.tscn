@@ -31,7 +31,7 @@ position = Vector2(240, 450)
 [node name="MobPath" type="Path2D" parent="."]
 curve = SubResource("Curve2D_7mycd")
 
-[node name="MonSpawnLocation" type="PathFollow2D" parent="MobPath"]
+[node name="MobSpawnLocation" type="PathFollow2D" parent="MobPath"]
 
 [connection signal="hit" from="Player" to="." method="game_over"]
 [connection signal="timeout" from="MobTimer" to="." method="_on_mob_timer_timeout"]
